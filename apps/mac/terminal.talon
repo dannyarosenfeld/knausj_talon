@@ -1,7 +1,7 @@
 os: mac
 app: Terminal
-app: iTerm2
-app: com.apple.Terminal
+app: iterm
+app: com.googlecode.iterm2
 -
 action(user.file_manager_open_parent):
     insert("cd ..")
@@ -32,4 +32,148 @@ suspend:
 resume:
   insert("fg")
   key(enter)
+go:
+  insert("cd ")
+drill:
+  insert("../")
+head:
+  insert(" head ")
+opower:
+  insert("opower/")
+out:
+  insert("out")
+ops:
+  insert("ops")
+bin:
+  insert("bin")
+pigeon:
+  insert("pgn")
+aps:
+  insert("aps")
+stage:
+  insert("stage")
+prod:
+  insert("prod")
+query:
+  insert("select ")
+star:
+  insert(" * ")
+from:
+  insert("from ")
+customer:
+  insert("  customer c")
+join:
+  insert("  join ")
+utility account:
+  insert(" utility_acct ua")
+on:
+  insert(" on ")
+custom:
+  insert(" customer_notification_contact cnc")
+contact:
+  insert("contact")
+preferences:
+  insert("preferences")
+eyed:
+  insert(".id")
+ear:
+  insert("_id")
+rate:
+  insert("rate")
+code:
+  insert("code")
+util:
+  insert("util")
+data:
+  insert(" dbs rss ")
+servers:
+  insert(" which_servers -c")
+gateway:
+  insert(" ssh stage-bertha-gateway")
+make:
+  insert(" mkdir ")
+batch:
+  insert(" cd /nfs/bertha-platform-share/alerts/")
+mailing:
+  insert(" dannyarosenfeld@gmail.com")
+mailing2:
+  insert(" daniel.rosenfeld.sharp@oracle.com")
+shell:
+  insert(" ssh prod-ie-shell-1001")
+tables:
+  insert(" show tables;")
+wack:
+  key(ctrl-w)
+left:
+  key(alt-left)
+right:
+  key(alt-right)
+back:
+  key(backspace)
+search:
+  key(ctrl-r)
+cancel:
+  key(ctrl-c) 
+direct:
+  insert("pwd")
+lefty:
+  key(ctrl-a)
+ricky:
+  key(ctrl-e)
+clear line:
+  key(ctrl-u)
+spill:
+  insert("ls")
+go back:
+  insert(" cd -\n")
 
+# Standard commands
+git add patch: "git add . -p\n"
+git add: "git add "
+git add everything: "git add -u\n"
+git bisect: "git bisect "
+git blame: "git alame "
+git branch: "git branch "
+git branch <user.text>: "git branch {text}"
+git checkout: "git checkout "
+git checkout master: "git checkout master\n"
+git checkout <user.text>: "git checkout {text}"
+git cherry pick: "git cherry-pick "
+git clone: "git clone "
+git commit message <user.text>: "git commit -m '{text}'"
+git commit: "git commit\n"
+git diff (colour|color) words: "git diff --color-words "
+git diff: "git diff "
+git diff cached: "git diff --cached\n"
+git fetch: "git fetch\n"
+git fetch <user.text>: "git fetch {text}"
+git in it: "git init\n"
+git log: "git log\n"
+git merge: "git merge "
+git merge <user.text>:"git merge {text}"
+git move: "git mv "
+git new branch: "git checkout -b "
+git pull: "git pull\n"
+git pull origin: "git pull origin "
+git pull rebase: "git pull --rebase\n"
+git pull fast forward: "git pull --ff-only\n"
+git pull <user.text>: "git pull {text} "
+git push: "git push\n"
+git push origin: "git push origin "
+git push up stream origin: "git push -u origin"
+git push <user.text>: "git push {text} "
+git push tags: "git push --tags\n"
+git rebase: "git rebase\n"
+git rebase continue: "git rebase --continue"
+git rebase skip: "git rebase --skip"
+git remove: "git rm "
+git (remove|delete) branch: "git branch -d "
+git (remove|delete) remote branch: "git push --delete "
+git reset: "git reset "
+git reset soft: "git reset --soft "
+git reset hard: "git reset --hard "
+git show: "git show "
+git stash pop: "git stash pop\n"
+git stash: "git stash\n"
+git status: "git status\n"
+git tag: "git tag "
