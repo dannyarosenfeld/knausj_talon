@@ -12,8 +12,10 @@ ascending: " ASC"
 dot i d: ".id"
 is not null: " IS NOT NULL"
 is null: " IS NULL"
+tables: "show tables;"
+customer notification contact: "customer_notification_contact"
 inner join:
-    insert("INNER JOIN  ON ")
+    insert("JOIN  ON ")
     key(left)
     key(left)
     key(left)

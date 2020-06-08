@@ -32,6 +32,10 @@ suspend:
 resume:
   insert("fg")
   key(enter)
+go up: 
+  edit.up()
+go down: 
+  edit.down()
 go:
   insert("cd ")
 drill:
@@ -125,45 +129,45 @@ clear line:
 spill:
   insert("ls")
 go back:
-  insert(" cd -\n")
+  insert(" cd -")
 
 # Standard commands
-git add patch: "git add . -p\n"
+git add patch: "git add . -p"
 git add: "git add "
-git add everything: "git add -u\n"
+git add everything: "git add -u"
 git bisect: "git bisect "
 git blame: "git alame "
 git branch: "git branch "
 git branch <user.text>: "git branch {text}"
 git checkout: "git checkout "
-git checkout master: "git checkout master\n"
+git checkout master: "git checkout master"
 git checkout <user.text>: "git checkout {text}"
 git cherry pick: "git cherry-pick "
 git clone: "git clone "
 git commit message <user.text>: "git commit -m '{text}'"
-git commit: "git commit\n"
+git commit: "git commit"
 git diff (colour|color) words: "git diff --color-words "
 git diff: "git diff "
-git diff cached: "git diff --cached\n"
-git fetch: "git fetch\n"
+git diff cached: "git diff --cached"
+git fetch: "git fetch"
 git fetch <user.text>: "git fetch {text}"
-git in it: "git init\n"
-git log: "git log\n"
+git in it: "git init"
+git log: "git log"
 git merge: "git merge "
 git merge <user.text>:"git merge {text}"
 git move: "git mv "
 git new branch: "git checkout -b "
-git pull: "git pull\n"
+git pull: "git pull"
 git pull origin: "git pull origin "
-git pull rebase: "git pull --rebase\n"
-git pull fast forward: "git pull --ff-only\n"
+git pull rebase: "git pull --rebase"
+git pull fast forward: "git pull --ff-only"
 git pull <user.text>: "git pull {text} "
-git push: "git push\n"
+git push: "git push"
 git push origin: "git push origin "
 git push up stream origin: "git push -u origin"
 git push <user.text>: "git push {text} "
-git push tags: "git push --tags\n"
-git rebase: "git rebase\n"
+git push tags: "git push --tags"
+git rebase: "git rebase"
 git rebase continue: "git rebase --continue"
 git rebase skip: "git rebase --skip"
 git remove: "git rm "
@@ -173,7 +177,7 @@ git reset: "git reset "
 git reset soft: "git reset --soft "
 git reset hard: "git reset --hard "
 git show: "git show "
-git stash pop: "git stash pop\n"
-git stash: "git stash\n"
+git stash pop: "git stash pop"
+git stash: "git stash"
 git status: "git status\n"
 git tag: "git tag "
