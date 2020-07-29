@@ -1,6 +1,7 @@
 slap:
 	edit.line_end()
 	key(enter)
+space: key(space)
 cd: "cd "
 grep: "grep "
 elle less: "ls "
@@ -58,12 +59,12 @@ zoom out: edit.zoom_out()
 (page | scroll) [down]: key(pgdown)
 copy: edit.copy()
 cut that: edit.cut()
-paste: edit.paste()
+pasta: edit.paste()
 paste match: edit.paste_match_style()
 file save: edit.save()
 #menu help: key(F1)
 #spotlight: key(super)
-undo: edit.undo()
+undo that: edit.undo()
 redo: edit.redo()
 volume up: key(volup)
 volume down: key(voldown)
