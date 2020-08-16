@@ -78,11 +78,16 @@ wipe: key(backspace)
 	key(left)
 funny: "ha ha"
 #menu: key(alt)
-
+diego: insert("sdge")
+oracle mail: insert("daniel.rosenfeld.sharp@oracle.com")
+word mail: insert("dannyarosenfeld@gmail.com")
 word pass: insert("Hhhhhh1*")
 word oracle: insert("Gggggggggg1*")
 word stage: insert("dbs rss ")
-word push: insert("push")
+word push:
+	insert("Iiiiii1*")
+	key(tab)
+	insert("push")
 word servers: insert("which_servers -c")
 word notification: insert("customer_notification_contact")
 word bertha: insert("ssh stage-bertha-gateway")

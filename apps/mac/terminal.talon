@@ -58,6 +58,8 @@ stage:
   insert("stage")
 prod:
   insert("prod")
+pasta:
+  edit.paste()
 query:
   insert("select ")
 star:
